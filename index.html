@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>School Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h1 id="title">Student Survey Form</h1>
+        <p id="description">Please answer the follow questions.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="stnum-label" id="stnum-label">Student number:<input id="name" name="stnum-label" type="text" required
+                        placeholder="Enter your student name in [XXXX-XXXXXX-MN-XX] format" /></label>
+                <label for="name-label" id="name-label">Full name: <input id="name" name="name-label" type="text" required
+                        placeholder="Enter your name in [First Name, M.I, Surname] format" /></label>
+
+                <label for="email-label" id="email-label">Email: <input id="email" name="email-label" type="email" required
+                        placeholder="Enter your email" /></label>
+                <label for="number-label" id="number-label">Age (optional): <input id="number" type="number" name="age"
+                        min="13" max="120" placeholder="Enter your age" /></label>
+
+                <label for="dropdown-label">What is your course?
+                    <select id="dropdown" name="role">
+                        <option value="">Select your course</option>
+                        <option value="1">Bachelor of Science in Computer Science</option>
+                        <option value="2">Bachelor of Science in Biology</option>
+                        <option value="3">Bachelor of Science in Chemistry</option>
+                        <option value="4">Bachelor of Science in Physics</option>
+                        <option value="5">Bachelor of Science in Mathematics</option>
+                        <option value="6">Bachelor of Science in Environmental Science</option>
+                        <option value="7">Bachelor of Science in Psychology</option>
+                        <option value="8">Bachelor of Science in Nursing</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="radio-label"> Which school setup do you prefer among these options:?
+                    <label for="f2f"><input id="f2f" type="radio" value="f2f" name="answer"
+                            class="inline" /> Face-to-face (f2f)</label>
+                    <label for="onlineclass"><input id="onlineclass" type="radio" name="answer" class="inline" value="onlineclass" />
+                        Online Class</label>
+                    <label for="hybrid"><input id="hybrid" type="radio" name="answer" class="inline" value="hybrid" />
+                        Hybrid</label>
+
+                    
+                    <label for="improvement">Check the resources you find most helpful for learning: (Check all that apply)
+                            <label for="txtbk"> <input id="txtbk" type="checkbox" required name="improve" class="inline"
+                                    value="Textbooks" /> Textbooks
+                            </label>
+                            <label for="OVL"> <input id="OVL" type="checkbox" required name="improve" class="inline"
+                                    value="Online Video Lectures" /> Online Video Lectures
+                            </label>
+                            <label for="interactive"> <input id="interactive" type="checkbox" required name="improve" class="inline"
+                                    value="Interactive Simulations" /> Interactive Simulations
+                             </label>
+                            <label for="GSS"> <input id="GSS" type="checkbox" required name="improve" class="inline" value="Group Study Sessions" />
+                                Group Study Sessions
+                            </label>
+                    </label>
+            </fieldset>
+            <fieldset>
+                </label>
+                <label for="suggestion">Any comments or suggestions for the university?
+                    <textarea id="suggestion" name="suggestion" rows="3" cols="30"
+                        placeholder="Enter your comment here.."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </body>
+
+</html>
